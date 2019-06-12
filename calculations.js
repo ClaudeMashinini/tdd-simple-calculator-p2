@@ -1,7 +1,7 @@
 module.exports = class Calculator {
 
 	constructor() {
-		this.memory = [];
+		this.slots = [];
 	}
 
 	add() {
@@ -24,10 +24,10 @@ module.exports = class Calculator {
 		return this.num;
 	}
 	set_slot(slot_number) {
-		this.memory.push(this.last());
+		this.slots.push(this.last());
 	}
 	get_slot(slot_number) {
-		return this.memory[slot_number - 1];
+		return this.slots[slot_number - 1];
 	}
 
 }
