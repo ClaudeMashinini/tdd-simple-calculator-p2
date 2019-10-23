@@ -34,7 +34,7 @@ describe("carrying out calculations", function() {
     });
   });
   describe("setting and getting created slots", function() {
-    it("should be able to create a slot for the last operation and retrieve, use and manipulate it", function() {
+    it("should be able to create a slot for any operation and be able to retrieve, use and manipulate it", function() {
       expect(calculator.multiply(9, 9)).toBe(81);
       calculator.set_slot(1);
       expect(calculator.get_slot(1)).toBe(81);
